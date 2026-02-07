@@ -26,9 +26,18 @@ class AppInit {
 
     await rive.RiveNative.init();
 
-    await dotenv.load(fileName: "assets/.env");
-
-    await FlavorService.init(flavor: Flavor.dev);
+    final flavor = Flavor.uat;
+    await FlavorService.init(flavor: flavor);
+    if (flavor == Flavor.dev) {
+      await dotenv.load(fileName: "assets/.env");
+    } else {
+      dotenv.env.addAll({
+        "APP_VERSION": "uat",
+        "APP_ENV": "uat",
+        "SUPABASE_URL": "https://xyzcompany.supabase.co",
+        "SUPABASE_ANON_KEY": "public-anonymous-key",
+      });
+    }
 
     await Jiffy.setLocale('th');
 
