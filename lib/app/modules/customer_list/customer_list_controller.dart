@@ -35,11 +35,14 @@ extension CustomerListControllerAction on CustomerListController {
     isLoading.value = false;
   }
 
-  Future<void> onAdd() async {}
+  Future<void> onAdd() async {
+    await Get.toNamed(Routes.CUSTOMER_PROFILE, arguments: 0);
+  }
 
-  Future<void> onEdit(int index) async {}
-
-  Future<void> onDel(int index) async {}
+  Future<void> onView(int index) async {
+    final customer = customers[index];
+    await Get.toNamed(Routes.CUSTOMER_PROFILE, arguments: customer.id);
+  }
 }
 
 class Customer {

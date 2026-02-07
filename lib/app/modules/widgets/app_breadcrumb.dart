@@ -40,8 +40,8 @@ class Breadcrumb extends StatelessWidget {
                     child: MouseRegion(
                       cursor: isLast ? SystemMouseCursors.basic : SystemMouseCursors.click,
                       child: isLast
-                          ? item.label.bodySmall.regular.color(Colors.grey.shade700)
-                          : item.label.bodySmall.bold.color(AppColor.primary),
+                          ? item.label.bodyLarge.regular.color(Colors.grey.shade700)
+                          : item.label.bodyLarge.bold.color(AppColor.primary),
                     ),
                   ),
                   if (!isLast)

@@ -48,8 +48,6 @@ class ContentView extends GetView<CustomerListController> {
               columnType: [int, String, String, int, bool, String],
               rows: controller.customers.map((e) => e.table).toList(),
               onAdd: controller.onAdd,
-              onEdit: controller.onEdit,
-              onDelete: controller.onDel,
               isLoading: controller.isLoading.value,
               isAdmin: false,
               cellBuilder: (value, col, row) {
@@ -64,7 +62,7 @@ class ContentView extends GetView<CustomerListController> {
                       ),
                       child: IconButton(
                         icon: const Icon(Icons.search_outlined, color: Colors.white, size: 14),
-                        onPressed: () => controller.onEdit(row),
+                        onPressed: () => controller.onView(row),
                       ),
                     ),
                   );
