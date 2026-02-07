@@ -1,4 +1,3 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
 
 class FlavorService {
@@ -36,7 +35,7 @@ class FlavorService {
   }
 
   String get version {
-    return dotenv.get('APP_VERSION', fallback: '1.0.0');
+    return '1.0.0';
   }
 }
 

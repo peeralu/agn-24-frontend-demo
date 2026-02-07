@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:rive/rive.dart' as rive;
@@ -26,18 +25,7 @@ class AppInit {
 
     await rive.RiveNative.init();
 
-    final flavor = Flavor.uat;
-    await FlavorService.init(flavor: flavor);
-    if (flavor == Flavor.dev) {
-      await dotenv.load(fileName: "assets/.env");
-    } else {
-      dotenv.env.addAll({
-        "APP_VERSION": "uat",
-        "APP_ENV": "uat",
-        "SUPABASE_URL": "https://xyzcompany.supabase.co",
-        "SUPABASE_ANON_KEY": "public-anonymous-key",
-      });
-    }
+    await FlavorService.init(flavor: Flavor.dev);
 
     await Jiffy.setLocale('th');
 
