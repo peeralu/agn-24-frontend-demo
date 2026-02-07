@@ -1,7 +1,9 @@
 {
   "buildCommand": "bash configurator.sh",
   "outputDirectory": "build/web",
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/manifest.json", "destination": "/manifest.json" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
