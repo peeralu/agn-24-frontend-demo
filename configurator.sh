@@ -11,4 +11,4 @@ flutter doctor
 flutter config --enable-web
 flutter clean
 flutter pub get
-flutter build web --release --no-tree-shake-icons --pwa-strategy=none
+flutter build web --release --no-tree-shake-icons --pwa-strategy=none --base-href=/

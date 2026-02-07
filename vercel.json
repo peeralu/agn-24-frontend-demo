@@ -1,4 +1,7 @@
 {
   "buildCommand": "bash configurator.sh",
-  "outputDirectory": "build/web"
+  "outputDirectory": "build/web",
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
