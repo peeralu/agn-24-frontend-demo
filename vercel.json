@@ -2,8 +2,9 @@
   "buildCommand": "bash configurator.sh",
   "outputDirectory": "build/web",
   "rewrites": [
-    { "source": "/assets/(.*)", "destination": "/assets/$1" },
     { "source": "/manifest.json", "destination": "/manifest.json" },
+    { "source": "/flutter_service_worker.js", "destination": "/flutter_service_worker.js" },
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
