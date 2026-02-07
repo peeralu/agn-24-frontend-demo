@@ -26,7 +26,7 @@ class AppInit {
 
     await rive.RiveNative.init();
 
-    await dotenv.load(fileName: ".env");
+    await dotenv.load(fileName: "assets/.env");
 
     await FlavorService.init(flavor: Flavor.dev);
 

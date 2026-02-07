@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 
 import 'package:frontend/app/modules/admin/widgets/content_body.dart';
 import 'package:frontend/app/modules/widgets/widgets.dart';
-import 'package:frontend/app/routes/app_pages.dart';
 
 import 'customer_list_controller.dart';
 
