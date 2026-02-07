@@ -57,7 +57,6 @@ extension AdminControllerAction on AdminController {
       title: "ออกจากระบบ",
       message: "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ?",
       onOkTap: () async {
-        await AuthService.instance.signOut();
         Get.offAllNamed(Routes.LOGIN);
         AppToast.showInfo(message: "คุณได้ออกจากระบบเรียบร้อยแล้ว");
       },

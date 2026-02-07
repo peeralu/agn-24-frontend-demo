@@ -76,7 +76,7 @@ extension LoginControllerAction on LoginController {
 
       isLoading.value = false;
       AppToast.showSuccess(message: "ยินดีต้อนรับกลับ, $username!");
-      Get.offAllNamed(Routes.CUSTOMER_PROFILE);
+      Get.offAllNamed(Routes.CUSTOMER_LIST);
     } catch (e) {
       isLoading.value = false;
       print(e);
