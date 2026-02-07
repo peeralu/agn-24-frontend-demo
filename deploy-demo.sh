@@ -15,3 +15,8 @@ flutter build web \
   --release \
   --no-tree-shake-icons \
   --pwa-strategy=none
+
+
+flutter clean
+flutter pub get
+flutter build web --release --no-tree-shake-icons --pwa-strategy=none
