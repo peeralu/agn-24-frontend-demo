@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # ให้ Apache เสิร์ฟไฟล์จริงก่อน (รูปภาพ, js, css, assets)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # ถ้าไม่ใช่ไฟล์จริง → ส่งไป index.html (Flutter Web SPA)
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# เปิด Gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache static assets (Flutter build) นาน ๆ เพื่อความเร็ว
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/* "access plus 1 year"
+</IfModule>

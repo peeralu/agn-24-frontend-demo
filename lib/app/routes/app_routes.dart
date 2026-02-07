@@ -1,0 +1,88 @@
+part of 'app_pages.dart';
+// DO NOT EDIT. This is code generated via package:get_cli/get_cli.dart
+
+abstract class Routes {
+  Routes._();
+  static const LOGIN = _Paths.LOGIN;
+  static const CUSTOMER_PROFILE = _Paths.CUSTOMER_PROFILE;
+  static const CUSTOMER_MODELS = _Paths.CUSTOMER_MODELS;
+  static const AGENT_DASHBOARD = _Paths.AGENT_DASHBOARD;
+  static const AGENT_PROFILE = _Paths.AGENT_PROFILE;
+  static const AGENT_CUSTOMER = _Paths.AGENT_CUSTOMER;
+  static const AGENT_CUSTOMERS = _Paths.AGENT_CUSTOMERS;
+  static const AGENT_INSURANCE_SEARCH = _Paths.AGENT_INSURANCE_SEARCH;
+  static const AGENT_TOPUP = _Paths.AGENT_TOPUP;
+  static const AGENT_COMMISSION = _Paths.AGENT_COMMISSION;
+  static const AGENT_REPORT = _Paths.AGENT_REPORT;
+  static const INSURUNCE_SEARCH = _Paths.INSURUNCE_SEARCH;
+  static const INSURUNCE_DETAIL = _Paths.INSURUNCE_DETAIL;
+  static const INSURANCE_SEARCH = _Paths.INSURANCE_SEARCH;
+  static const INSURANCE_DETAIL = _Paths.INSURANCE_DETAIL;
+  static const INSURANCE_ENROLL = _Paths.INSURANCE_ENROLL;
+  static const WALLET_BALANCE = _Paths.WALLET_BALANCE;
+  static const WALLET_TOPUP = _Paths.WALLET_TOPUP;
+  static const WALLET_HISTORY = _Paths.WALLET_HISTORY;
+  static const REPORT_SALES = _Paths.REPORT_SALES;
+  static const REPORT_COMMISSION = _Paths.REPORT_COMMISSION;
+  static const REPORT_TOPUP = _Paths.REPORT_TOPUP;
+  static const REPORT_AGENTS = _Paths.REPORT_AGENTS;
+  static const REPORT_CUSTOMERS = _Paths.REPORT_CUSTOMERS;
+  static const ADMIN_AGENTS = _Paths.ADMIN_AGENTS;
+  static const ADMIN_CUSTOMERS = _Paths.ADMIN_CUSTOMERS;
+  static const ADMIN_INSURANCE = _Paths.ADMIN_INSURANCE;
+  static const ADMIN_REPORTS = _Paths.ADMIN_REPORTS;
+  static const ADMIN_USERS = _Paths.ADMIN_USERS;
+  static const ADMIN_WALLET = _Paths.ADMIN_WALLET;
+  static const REGISTER = _Paths.REGISTER;
+  static const FORGOT_PASSWORD = _Paths.FORGOT_PASSWORD;
+  static const ADMIN_INSURANCE_FORM = _Paths.ADMIN_INSURANCE_FORM;
+  static const MAIN = _Paths.MAIN;
+  static const ADMIN_USERS_FORM = _Paths.ADMIN_USERS_FORM;
+  static const ADMIN_ROLES = _Paths.ADMIN_ROLES;
+  static const ADMIN_ROLES_FORM = _Paths.ADMIN_ROLES_FORM;
+  static const AGENT_REGISTER = _Paths.AGENT_REGISTER;
+  static const CUSTOMER_LIST = _Paths.CUSTOMER_LIST;
+}
+
+abstract class _Paths {
+  _Paths._();
+  static const LOGIN = '/login';
+  static const CUSTOMER_PROFILE = '/customer/profile';
+  static const CUSTOMER_MODELS = '/customer/models';
+  static const AGENT_DASHBOARD = '/agent/dashboard';
+  static const AGENT_PROFILE = '/agent/profile';
+  static const AGENT_CUSTOMER = '/agent/customer';
+  static const AGENT_CUSTOMERS = '/agent/customers';
+  static const AGENT_INSURANCE_SEARCH = '/agent/insurance/search';
+  static const AGENT_TOPUP = '/agent/topup';
+  static const AGENT_COMMISSION = '/agent/commission';
+  static const AGENT_REPORT = '/agent/report';
+  static const INSURUNCE_SEARCH = '/insurunce/search';
+  static const INSURUNCE_DETAIL = '/insurunce/detail';
+  static const INSURANCE_SEARCH = '/insurance/search';
+  static const INSURANCE_DETAIL = '/insurance/detail';
+  static const INSURANCE_ENROLL = '/insurance/enroll';
+  static const WALLET_BALANCE = '/wallet/balance';
+  static const WALLET_TOPUP = '/wallet/topup';
+  static const WALLET_HISTORY = '/wallet/history';
+  static const REPORT_SALES = '/report/sales';
+  static const REPORT_COMMISSION = '/report/commission';
+  static const REPORT_TOPUP = '/report/topup';
+  static const REPORT_AGENTS = '/report/agents';
+  static const REPORT_CUSTOMERS = '/report/customers';
+  static const ADMIN_AGENTS = '/admin/agents';
+  static const ADMIN_CUSTOMERS = '/admin/customers';
+  static const ADMIN_INSURANCE = '/admin/insurance';
+  static const ADMIN_REPORTS = '/admin/reports';
+  static const ADMIN_USERS = '/admin/users';
+  static const ADMIN_WALLET = '/admin/wallet';
+  static const REGISTER = '/register';
+  static const FORGOT_PASSWORD = '/forgot-password';
+  static const ADMIN_INSURANCE_FORM = '/admin/insurance/:id';
+  static const MAIN = '/main';
+  static const ADMIN_USERS_FORM = '/admin/users/:id';
+  static const ADMIN_ROLES = '/admin/roles';
+  static const ADMIN_ROLES_FORM = '/admin/roles/:id';
+  static const AGENT_REGISTER = '/agent/register';
+  static const CUSTOMER_LIST = '/customer-list';
+}
